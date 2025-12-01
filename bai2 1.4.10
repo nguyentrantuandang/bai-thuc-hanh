@@ -1,0 +1,7 @@
+original_string = "apple,banana,cherry,date"
+words_list = original_string.split(",")
+print(words_list)
+words_list[1] = "orange"
+print(words_list)
+new_string = " | ".join(words_list)
+print(new_string)
