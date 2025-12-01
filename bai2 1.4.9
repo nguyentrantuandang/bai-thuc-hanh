@@ -1,0 +1,11 @@
+s = input("Enter a String: ")
+dict_count = {}
+for n in s:
+    char = n.lower()
+    if char == " ":
+        continue
+    if char in dict_count:
+        dict_count[char] += 1
+    else:
+        dict_count[char] = 1
+print(dict_count)
