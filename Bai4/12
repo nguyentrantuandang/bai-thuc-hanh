@@ -1,0 +1,13 @@
+ds = ['123', '456', '789', '123']
+
+phan_tu_can_xoa = '123'
+
+# Sử dụng remove() để xóa PHẦN TỬ đầu tiên có giá trị là '123' tìm thấy trong list
+try:
+    ds.remove(phan_tu_can_xoa)
+    print(ds)
+except ValueError:
+    print(f"Phần tử '{phan_tu_can_xoa}' không có trong list.")
+
+# Ví dụ khi chạy:
+# ['456', '789', '123']
