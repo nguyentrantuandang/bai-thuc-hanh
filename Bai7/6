@@ -1,0 +1,10 @@
+from collections import deque
+
+def read_from_tail(fname, nlines):
+    with open(fname, 'r') as f:
+        return deque(f, nlines)
+
+# Ví dụ sử dụng:
+# lines = read_from_tail('test.txt', 2)
+# for line in lines:
+#     print(line.strip())
