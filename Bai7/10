@@ -1,0 +1,25 @@
+def find_longest_words(fname):
+    with open(fname, 'r') as f:
+        text = f.read()
+    
+    words = text.split()
+    
+    if not words:
+        return []
+    
+    max_length = 0
+    for word in words:
+        if len(word) > max_length:
+            max_length = len(word)
+    
+    longest_words = []
+    for word in words:
+        if len(word) == max_length:
+            longest_words.append(word)
+            
+    return list(set(longest_words))
+
+# Ví dụ sử dụng:
+# Giả sử file 'sample.txt' có nội dung: "Python is a popular programming language"
+# longest = find_longest_words('sample.txt')
+# print(longest) # Kết quả: ['programming']
