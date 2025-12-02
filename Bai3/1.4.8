@@ -1,0 +1,37 @@
+import math
+
+def calculate_robot_distance():
+    x = 0
+    y = 0
+    
+    while True:
+        command = input()
+        
+        if command.upper() == 'END':
+            break
+        
+        try:
+            parts = command.split()
+            direction = parts[0].upper()
+            steps = int(parts[1])
+            
+            if direction == 'UP':
+                y += steps
+            elif direction == 'DOWN':
+                y -= steps
+            elif direction == 'LEFT':
+                x -= steps
+            elif direction == 'RIGHT':
+                x += steps
+                
+        except (IndexError, ValueError):
+            if command.upper() != 'END':
+                pass
+
+    distance = math.sqrt(x**2 + y**2)
+    result = round(distance)
+    
+    print(result)
+    
+    return result
+
