@@ -1,0 +1,11 @@
+def copy_file(source_fname, dest_fname):
+    with open(source_fname, 'r') as source:
+        content = source.read()
+    
+    with open(dest_fname, 'w') as dest:
+        dest.write(content)
+        
+    print(f"Content copied from {source_fname} to {dest_fname}")
+
+# Ví dụ sử dụng:
+# copy_file('test.txt', 'test_copy.txt')
