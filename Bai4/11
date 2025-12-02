@@ -1,0 +1,9 @@
+ds = ['1', '2', '3']
+
+phan_tu_moi = 'abc'
+ds.append(phan_tu_moi)
+
+print(ds)
+
+# Ví dụ khi chạy:
+# ['1', '2', '3', 'abc']
