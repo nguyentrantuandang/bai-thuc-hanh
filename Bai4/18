@@ -1,0 +1,21 @@
+try:
+    n = int(input("Nhập số n: "))
+    
+    if n <= 0:
+        print("n phải là số dương.")
+    else:
+        fib_list = []
+        a, b = 0, 1
+        
+        while a < n:
+            fib_list.append(a)
+            a, b = b, a + b
+            
+        print(fib_list)
+        
+except ValueError:
+    print("Đầu vào không phải là số nguyên hợp lệ.")
+
+# Ví dụ khi chạy (với n = 100):
+# Nhập số n: 100
+# [0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89]
