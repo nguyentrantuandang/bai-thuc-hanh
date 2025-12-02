@@ -1,0 +1,8 @@
+def write_list_to_file(fname, data_list):
+    with open(fname, 'w') as f:
+        for item in data_list:
+            f.write(item + '\n')
+
+# Ví dụ sử dụng:
+# my_list = ["Apple", "Banana", "Cherry", "Date"]
+# write_list_to_file('list_data.txt', my_list)
