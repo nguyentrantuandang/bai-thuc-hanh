@@ -1,0 +1,17 @@
+S = input("Nhập chuỗi: ").split()
+
+if not S:
+    print("List rỗng.")
+else:
+    length = len(S)
+    mid_point = length // 2
+    
+    # Cắt list để lấy nửa đầu
+    sub_list = S[:mid_point]
+    
+    print(sub_list)
+
+# Ví dụ khi chạy:
+# Nhập chuỗi: 1 2 3 4 5
+# ['1', '2'] 
+# (len=5, mid_point=2. S[:2] = [1, 2])
