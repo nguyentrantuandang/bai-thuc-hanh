@@ -1,0 +1,14 @@
+import numpy as np
+
+data_input = [('Peter', 5, 48.5, 1), ('Nail', 6, 52.5, 1), ('Paul', 5, 42.1, 1), ('Jame', 5, 48.5, 1), ('Nail', 6, 52.5, 1)]
+
+my_dtype = [('name', 'U10'), ('class', 'i4'), ('height', 'f4'), ('ID', 'i4')]
+
+students = np.array(data_input, dtype=my_dtype)
+
+print("Mảng ban đầu:")
+print(students)
+
+print("\nKết quả sắp xếp:")
+result_sorted = np.sort(students, order='class')
+print(result_sorted)
