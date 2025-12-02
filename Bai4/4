@@ -1,0 +1,9 @@
+ds = input("Danh sách: ").split()
+for s in ds:
+    print(s)
+
+# Ví dụ khi chạy:
+# Danh sách: cam quyt chanh
+# cam
+# quyt
+# chanh
