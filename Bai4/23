@@ -1,0 +1,21 @@
+input_sentence = input("Nhập một câu: ")
+
+count_letters = 0
+count_digits = 0
+
+for char in input_sentence:
+    if char.isalpha():
+        count_letters += 1
+    elif char.isdigit():
+        count_digits += 1
+
+print(f"Số chữ cái: {count_letters}")
+print(f"Số chữ số: {count_digits}")
+
+# Hoặc in ra theo định dạng yêu cầu của ví dụ:
+# print(f"{count_letters}, {count_digits}")
+
+# Ví dụ khi chạy:
+# Nhập một câu: hello world! 123
+# Số chữ cái: 10
+# Số chữ số: 3
