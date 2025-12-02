@@ -1,0 +1,24 @@
+import numpy as np
+
+student_id = [11023, 5202, 6230, 1671, 1682, 5241, 4532]
+student_height = [40, 45, 45, 41, 38, 40, 45.0]
+
+students_list = list(zip(student_id, student_height))
+
+my_dtype = [('ID', 'i4'), ('Height', 'f4')]
+students = np.array(students_list, dtype=my_dtype)
+
+print("Mảng ban đầu:")
+print(students)
+
+print("\n--- Kết quả sắp xếp ---")
+
+# Sắp xếp theo 'Height' (tăng dần) trước, sau đó theo 'ID' (tăng dần)
+sorted_students = np.sort(students, order=['Height', 'ID'])
+
+print(sorted_students)
+
+print("\nĐịnh dạng bảng kết quả:")
+print("ID | Height")
+for student in sorted_students:
+    print(f"{student['ID']:<4} | {student['Height']:.1f}")
