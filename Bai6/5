@@ -1,0 +1,11 @@
+class Solution:
+    def reverse_words(self, s):
+        words = s.split(' ')
+        words.reverse()
+        return " ".join(words)
+
+# Ví dụ sử dụng:
+# solution = Solution()
+# input_string = 'hello py'
+# result = solution.reverse_words(input_string)
+# print(result) # py hello
