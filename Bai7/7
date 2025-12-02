@@ -1,0 +1,10 @@
+def count_lines(fname):
+    with open(fname, 'r') as f:
+        line_count = 0
+        for line in f:
+            line_count += 1
+        return line_count
+
+# Ví dụ sử dụng:
+# total_lines = count_lines('test.txt')
+# print(total_lines)
