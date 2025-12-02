@@ -1,0 +1,18 @@
+ds = input("Nhập chuỗi: ").split()
+
+if not ds:
+    print("Không có từ nào được nhập.")
+else:
+    tu_dai_nhat = ""
+    do_dai_max = 0
+    
+    for word in ds:
+        if len(word) > do_dai_max:
+            do_dai_max = len(word)
+            tu_dai_nhat = word
+            
+    print(tu_dai_nhat)
+
+# Ví dụ khi chạy:
+# Nhập chuỗi: Đây là một ví dụ dài
+# ví
