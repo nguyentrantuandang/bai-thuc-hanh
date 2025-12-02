@@ -1,0 +1,25 @@
+def sum_digits(num):
+    total = 0
+    for digit in str(num):
+        total += int(digit)
+    return total
+
+try:
+    n = int(input("Nhập số n: "))
+    
+    if n <= 1:
+        print("Không có số nào thỏa mãn (k > 0).")
+    else:
+        print(f"Các số nguyên dương k < {n} thỏa mãn tổng chữ số > k:")
+        
+        for k in range(1, n):
+            if sum_digits(k) > k:
+                print(k)
+except ValueError:
+    print("Đầu vào không phải là số nguyên hợp lệ.")
+
+# Ví dụ khi chạy (với n = 10):
+# Nhập số n: 10
+# Các số nguyên dương k < 10 thỏa mãn tổng chữ số > k:
+# (Không in ra gì vì S(k) = k cho k=1..9)
+# Nếu n = 10, S(k) > k chỉ xảy ra khi k=0, nhưng yêu cầu là số nguyên dương.
