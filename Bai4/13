@@ -1,0 +1,13 @@
+ds = ['apple', 'banana', 'orange', 'kiwi']
+
+phan_tu_can_tim = 'orange'
+
+# index() trả về chỉ số (index) đầu tiên của phần tử tìm thấy
+try:
+    vi_tri = ds.index(phan_tu_can_tim)
+    print(f"Phần tử '{phan_tu_can_tim}' nằm ở vị trí (index): {vi_tri}")
+except ValueError:
+    print(f"Phần tử '{phan_tu_can_tim}' không có trong list.")
+
+# Ví dụ khi chạy:
+# Phần tử 'orange' nằm ở vị trí (index): 2
