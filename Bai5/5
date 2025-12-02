@@ -1,0 +1,8 @@
+my_list_5 = [11, 23, 58, 31, 56, 77, 43, 12, 65, 19]
+
+max_value = max(my_list_5)
+min_value = min(my_list_5)
+
+print("Danh sách:", my_list_5)
+print(f"Giá trị lớn nhất: {max_value}")
+print(f"Giá trị nhỏ nhất: {min_value}")
