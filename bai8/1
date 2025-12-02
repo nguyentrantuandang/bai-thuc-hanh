@@ -1,0 +1,29 @@
+import turtle
+
+window = turtle.Screen()
+window.bgcolor("lightgreen")
+
+painter = turtle.Turtle()
+painter.fillcolor('blue')
+painter.pencolor('blue')
+painter.pensize(3)
+
+def drawsq(t, s):
+    for i in range(4):
+        t.forward(s)
+        t.left(90)
+
+for i in range(1, 180):
+    painter.left(18)
+    drawsq(painter, 200)
+
+    # giải thích chương trình
+    Khởi Tạo Môi Trường
+​import turtle: Nhập thư viện đồ họa turtle.
+​window = turtle.Screen(): Tạo một cửa sổ đồ họa (màn hình vẽ).
+​window.bgcolor("lightgreen"): Đặt màu nền của cửa sổ là xanh lá nhạt.
+​painter = turtle.Turtle(): Tạo một đối tượng vẽ (con rùa) có tên là painter.
+​painter.fillcolor('blue'): Đặt màu tô là xanh dương (màu này không được sử dụng trong mã code này vì không có lệnh tô màu).
+​painter.pencolor('blue'): Đặt màu nét vẽ là xanh dương.
+​painter.pensize(3): Đặt độ dày của nét vẽ là 3 pixel.
+    
