@@ -1,0 +1,17 @@
+full_name = input("Nhập họ và tên: ")
+parts = full_name.split()
+
+if len(parts) >= 2:
+    last_name = parts[-1]
+    first_names = parts[:-1]
+    first_name = " ".join(first_names)
+    
+    print(f"Họ và tên đệm: {first_name}")
+    print(f"Tên riêng: {last_name}")
+else:
+    print("Vui lòng nhập họ và tên đầy đủ hơn (ít nhất 2 từ).")
+
+# Ví dụ khi chạy:
+# Nhập họ và tên: Nguyễn Văn An
+# Họ và tên đệm: Nguyễn Văn
+# Tên riêng: An
