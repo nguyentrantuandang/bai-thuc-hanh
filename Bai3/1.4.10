@@ -1,0 +1,22 @@
+import math
+
+def Tinh(R):
+    if R <= 0:
+        print("Bán kính phải là số dương hợp lệ.")
+        return None
+        
+    chu_vi = 2 * math.pi * R
+    dien_tich = math.pi * R**2
+    
+    print(f"Hình tròn có bán kính R = {R}")
+    print(f"Chu vi (C) là: {chu_vi:.2f}")
+    print(f"Diện tích (S) là: {dien_tich:.2f}")
+    
+    return chu_vi, dien_tich
+
+# Lấy đầu vào từ người dùng
+try:
+    ban_kinh = float(input("Nhập bán kính R của hình tròn: "))
+    Tinh(ban_kinh)
+except ValueError:
+    print("Lỗi: Đầu vào không phải là số.")
