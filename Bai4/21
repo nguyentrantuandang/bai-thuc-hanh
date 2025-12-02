@@ -1,0 +1,23 @@
+input_str = input("Nhập chuỗi số nhị phân 4 chữ số (VD: 0100,0011,1010,1001): ")
+
+binary_numbers = input_str.split(',')
+results = []
+
+for b_num in binary_numbers:
+    try:
+        decimal_num = int(b_num, 2)
+        
+        # Kiểm tra chia hết cho 4 VÀ chia hết cho 5 (tức là chia hết cho 20)
+        if decimal_num % 4 == 0 and decimal_num % 5 == 0:
+            results.append(b_num)
+            
+    except ValueError:
+        pass
+
+print(",".join(results))
+
+# Ví dụ khi chạy:
+# Nhập chuỗi số nhị phân 4 chữ số (VD: 0100,0011,1010,1001): 0100,1010,1000,1111,0000
+# (1000 = 8, 0000 = 0)
+# (8 không chia hết cho 5, 0 chia hết cho 4 và 5)
+# Đầu ra sẽ là: 0000
