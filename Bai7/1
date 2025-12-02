@@ -1,0 +1,5 @@
+input_file = open('D:/a.txt', 'r')
+for line in input_file:
+    reversed_line = line[::-1]
+    print(reversed_line.strip())
+input_file.close()
