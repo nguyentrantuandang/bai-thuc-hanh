@@ -1,0 +1,6 @@
+import numpy as np
+
+# Tạo mảng từ 12 đến 38 (bao gồm 12, loại trừ 39)
+arr_ascending = np.arange(12, 39)
+
+print(arr_ascending)
