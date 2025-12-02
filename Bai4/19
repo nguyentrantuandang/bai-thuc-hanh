@@ -1,0 +1,19 @@
+def sieve_primes(limit):
+    is_prime = [True] * (limit + 1)
+    is_prime[0] = is_prime[1] = False 
+    
+    p = 2
+    while p * p <= limit:
+        if is_prime[p]:
+            for i in range(p * p, limit + 1, p):
+                is_prime[i] = False
+        p += 1
+        
+    primes = [i for i, is_p in enumerate(is_prime) if is_p]
+    return tuple(primes)
+
+limit = 1000000
+P = sieve_primes(limit)
+
+print(f"Số lượng số nguyên tố nhỏ hơn {limit:,}: {len(P)}")
+print("Tuple P (Hiển thị 10 phần tử đầu tiên):", P[:10])
