@@ -1,0 +1,10 @@
+ds = input("Nhập: ").split()
+ds.reverse()
+for s in ds:
+    print(s)
+
+# Ví dụ khi chạy:
+# Nhập: mọi loại bơ
+# bơ
+# loại
+# mọi
