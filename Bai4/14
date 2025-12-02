@@ -1,0 +1,8 @@
+ds = [5, 1, 8, 3, 2]
+
+# sort() sắp xếp list tại chỗ (in-place)
+ds.sort()
+print(ds)
+
+# Ví dụ khi chạy:
+# [1, 2, 3, 5, 8]
