@@ -1,0 +1,20 @@
+import numpy as np
+
+# Tạo Structured Array
+students_details = np.array([('Rishav', 6.0, 10, 'old'),
+                           ('Aman', 5.5, 11, 'old'),
+                           ('Ankit', 5.8, 9, 'old'),
+                           ('Ritu', 5.9, 10, 'old'),
+                           ('Payal', 5.2, 11, 'old')],
+                          dtype=[('name', 'U20'), ('height', 'f8'), ('class', 'i4'), ('type', 'U10')])
+
+# In mảng ban đầu
+print("Mảng ban đầu:")
+print(students_details)
+
+# Sắp xếp mảng theo cột 'height'
+sorted_students = np.sort(students_details, order='height')
+
+# In mảng đã sắp xếp
+print("\nMảng đã sắp xếp theo chiều cao:")
+print(sorted_students)
