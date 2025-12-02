@@ -1,0 +1,17 @@
+def file_read(fname):
+    with open(fname, 'r') as f:
+        print(f.read())
+
+def append_and_display(fname):
+    with open(fname, 'a') as myfile:
+        myfile.write("Python Exercises\n")
+        myfile.write("Java Exercises\n")
+    
+    file_read(fname)
+
+# Ví dụ sử dụng:
+# Tạo một tệp ban đầu (nếu chưa có)
+# with open('test.txt', 'w') as f:
+#     f.write("Initial Content\n")
+
+# append_and_display('test.txt')
