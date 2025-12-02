@@ -1,0 +1,13 @@
+S = input("Nhập chuỗi: ")
+for char in S:
+    if not char.isspace():
+        print(char)
+
+# Ví dụ khi chạy:
+# Nhập chuỗi: Py th on
+# P
+# y
+# t
+# h
+# o
+# n
