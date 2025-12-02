@@ -1,0 +1,13 @@
+user_input = input("Nhập chuỗi số nhị phân (cách nhau bởi dấu phẩy): ")
+
+binary_numbers = user_input.split(',')
+
+# In từng số nhị phân đã nhập
+for b_num in binary_numbers:
+    print(b_num)
+
+# Ví dụ khi chạy:
+# Nhập chuỗi số nhị phân (cách nhau bởi dấu phẩy): 1010,0011,1111
+# 1010
+# 0011
+# 1111
