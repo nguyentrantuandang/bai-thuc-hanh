@@ -1,0 +1,11 @@
+def square(n):
+    return n * n
+
+def cube(n):
+    return n * n * n
+
+def average(values):
+    total = 0
+    for val in values:
+        total += val
+    return float(total) / len(values)
