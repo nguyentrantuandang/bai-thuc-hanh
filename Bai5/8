@@ -1,0 +1,14 @@
+def Sequential_Search_v2(data_list, item):
+    for index, element in enumerate(data_list):
+        if element == item:
+            return (True, index) 
+    return (False, -1)
+
+data_to_search = [11, 23, 58, 31, 56, 77, 43, 12, 65, 19, 31]
+item_to_find = 31
+
+result = Sequential_Search_v2(data_to_search, item_to_find)
+print(f"Kết quả cho tìm kiếm 31: {result}") 
+
+result_not_found = Sequential_Search_v2(data_to_search, 99)
+print(f"Kết quả cho tìm kiếm 99: {result_not_found}")
