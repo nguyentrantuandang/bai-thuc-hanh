@@ -1,0 +1,14 @@
+class StringManipulator:
+    def __init__(self):
+        self.s = ""
+
+    def get_String(self):
+        self.s = input("Enter a string: ")
+
+    def print_String(self):
+        print(self.s.upper())
+
+# Ví dụ sử dụng:
+# string_obj = StringManipulator()
+# string_obj.get_String() # Yêu cầu người dùng nhập
+# string_obj.print_String() # In ra chuỗi vừa nhập bằng chữ in hoa
