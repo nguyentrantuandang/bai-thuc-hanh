@@ -1,0 +1,14 @@
+S = input("Nhập chuỗi: ").split()
+
+if len(S) < 2:
+    print("List quá ngắn để loại bỏ phần tử đầu và cuối.")
+else:
+    # Sử dụng kỹ thuật slicing [1:-1] để loại bỏ phần tử ở index 0 (đầu)
+    # và phần tử ở index -1 (cuối)
+    sub_list = S[1:-1]
+    
+    print(sub_list)
+
+# Ví dụ khi chạy:
+# Nhập chuỗi: cam quyt chanh xoai
+# ['quyt', 'chanh']
