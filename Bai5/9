@@ -1,0 +1,30 @@
+def binary_search(data_list, value):
+    low = 0
+    high = len(data_list) - 1
+
+    while low <= high:
+        mid = (low + high) // 2 
+        
+        guess = data_list[mid]
+
+        if guess == value:
+            return True
+        elif guess < value:
+            low = mid + 1
+        else:
+            high = mid - 1
+
+    return False
+
+list_to_search = [11, 23, 58, 31, 56, 77, 43, 12, 65, 19, 31]
+
+list_sorted = sorted(list_to_search)
+print(f"Danh sách đã sắp xếp: {list_sorted}")
+
+search_value_found = 43
+result_found = binary_search(list_sorted, search_value_found)
+print(f"Tìm kiếm {search_value_found}: {result_found}") 
+
+search_value_not_found = 90
+result_not_found = binary_search(list_sorted, search_value_not_found)
+print(f"Tìm kiếm {search_value_not_found}: {result_not_found}")
