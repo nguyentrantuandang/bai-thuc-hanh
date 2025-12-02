@@ -1,0 +1,12 @@
+S = input("Nhập chuỗi: ")
+for char in S:
+    print(char.upper())
+
+# Ví dụ khi chạy:
+# Nhập chuỗi: Python
+# P
+# Y
+# T
+# H
+# O
+# N
