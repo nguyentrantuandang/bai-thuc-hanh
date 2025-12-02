@@ -1,0 +1,28 @@
+import turtle
+import random
+
+colors = ["red", "green", "blue", "orange", "purple", "pink", "yellow"]
+
+painter = turtle.Turtle()
+painter.pensize(3)
+
+for i in range(10):
+    color = random.choice(colors)
+    painter.pencolor(color)
+    painter.circle(100)
+    painter.right(30)
+    painter.left(60)
+    painter.setposition(0, 0)
+
+#giải thích chương trình
+import turtle,=random Nhập thư viện turtle (đồ họa) và random (ngẫu nhiên).
+colors = [...]=Tạo một danh sách các màu có thể chọn.
+painter = turtle.Turtle()=Tạo đối tượng vẽ (con rùa) tên là painter.
+painter.pensize(3)=Đặt độ dày nét vẽ là 3 pixel.
+for i in range(10):=Vòng lặp chạy 10 lần để vẽ 10 hình.
+color = random.choice(colors)=Chọn ngẫu nhiên một màu từ danh sách colors.
+painter.pencolor(color)=Đặt màu nét vẽ thành màu vừa được chọn ngẫu nhiên.
+painter.circle(100)=Vẽ một hình tròn có bán kính 100.
+painter.right(30)=Xoay con rùa sang phải 30^\circ (thay đổi hướng vẽ tiếp theo).
+painter.left(60)=Xoay con rùa sang trái 60^\circ (thay đổi hướng vẽ tiếp theo).
+painter.setposition(0, 0)=Di chuyển con rùa về vị trí gốc (0, 0) mà không vẽ (chuẩn bị cho lần lặp tiếp theo).
