@@ -1,0 +1,23 @@
+def benefit(n, k):
+    lai_suat_thang = 0.015
+    
+    if n <= 0 or k < 0:
+        print("Vốn gốc phải dương và số tháng không được âm.")
+        return None
+
+    tong_tien = n * (1 + lai_suat_thang)**k
+    
+    print(f"Vốn gốc ban đầu (n): {n:,} VND")
+    print(f"Lãi suất hàng tháng: 1.5%")
+    print(f"Thời gian gửi (k): {k} tháng")
+    print(f"Tổng số tiền nhận được sau {k} tháng là: {tong_tien:.2f} VND")
+    
+    return tong_tien
+
+# Lấy đầu vào từ người dùng
+try:
+    von_goc = float(input("Nhập số vốn ban đầu (n): "))
+    so_thang = int(input("Nhập số tháng gửi (k): "))
+    benefit(von_goc, so_thang)
+except ValueError:
+    print("Lỗi: Đầu vào không hợp lệ (n phải là số, k phải là số nguyên).")
