@@ -1,0 +1,13 @@
+my_list_6 = [11, 23, 58, 31, 56, 77, 43, 12, 65, 19]
+
+max_value_6 = max(my_list_6)
+min_value_6 = min(my_list_6)
+
+max_index = my_list_6.index(max_value_6)
+min_index = my_list_6.index(min_value_6)
+
+print("Danh sách:", my_list_6)
+print(f"Giá trị lớn nhất: {max_value_6}")
+print(f"Vị trí (index) lớn nhất: {max_index}")
+print(f"Giá trị nhỏ nhất: {min_value_6}")
+print(f"Vị trí (index) nhỏ nhất: {min_index}")
